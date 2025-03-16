@@ -1,0 +1,64 @@
+/* Ensure the entire page takes full width and height */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll issues */
+}
+
+/* Full-screen container */
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar full width */
+.navbar {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* Ensure navbar spans full width */
+}
+
+/* Navigation links */
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main content full width */
+.content {
+  flex: 1;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fix stats section width */
+.stats {
+  display: flex;
+  justify-content: center; /* Centers stats */
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%; /* Ensures full width */
+}
+
+/* Individual stat cards */
+.stat-card {
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  min-height: 100px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
